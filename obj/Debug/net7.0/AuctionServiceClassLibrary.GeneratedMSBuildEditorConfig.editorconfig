@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AuctionServiceClassLibrary
-build_property.ProjectDir = /Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/
+build_property.ProjectDir = /Users/idabjorn/Documents/repositories/ClassLibrary/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

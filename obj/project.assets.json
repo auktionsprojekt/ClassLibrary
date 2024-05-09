@@ -782,25 +782,24 @@
     ]
   },
   "packageFolders": {
-    "/Users/helenakaad/.nuget/packages/": {}
+    "/Users/idabjorn/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/AuctionServiceClassLibrary.csproj",
+      "projectUniqueName": "/Users/idabjorn/Documents/repositories/ClassLibrary/AuctionServiceClassLibrary.csproj",
       "projectName": "AuctionServiceClassLibrary",
-      "projectPath": "/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/AuctionServiceClassLibrary.csproj",
-      "packagesPath": "/Users/helenakaad/.nuget/packages/",
-      "outputPath": "/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/obj/",
+      "projectPath": "/Users/idabjorn/Documents/repositories/ClassLibrary/AuctionServiceClassLibrary.csproj",
+      "packagesPath": "/Users/idabjorn/.nuget/packages/",
+      "outputPath": "/Users/idabjorn/Documents/repositories/ClassLibrary/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/helenakaad/.nuget/NuGet/NuGet.Config"
+        "/Users/idabjorn/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -844,7 +843,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }

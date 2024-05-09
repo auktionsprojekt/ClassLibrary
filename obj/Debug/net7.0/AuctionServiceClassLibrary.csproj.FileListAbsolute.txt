@@ -9,3 +9,16 @@
 /Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/obj/Debug/net7.0/refint/AuctionServiceClassLibrary.dll
 /Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.pdb
 /Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/obj/Debug/net7.0/ref/AuctionServiceClassLibrary.dll
+/Users/idabjorn/Documents/repositories/ClassLibrary/bin/Debug/net7.0/AuctionServiceClassLibrary.deps.json
+/Users/idabjorn/Documents/repositories/ClassLibrary/bin/Debug/net7.0/AuctionServiceClassLibrary.dll
+/Users/idabjorn/Documents/repositories/ClassLibrary/bin/Debug/net7.0/AuctionServiceClassLibrary.pdb
+/Users/idabjorn/Documents/repositories/ClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.csproj.AssemblyReference.cache
+/Users/idabjorn/Documents/repositories/ClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/idabjorn/Documents/repositories/ClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.AssemblyInfoInputs.cache
+/Users/idabjorn/Documents/repositories/ClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.AssemblyInfo.cs
+/Users/idabjorn/Documents/repositories/ClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.csproj.CoreCompileInputs.cache
+/Users/idabjorn/Documents/repositories/ClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.sourcelink.json
+/Users/idabjorn/Documents/repositories/ClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.dll
+/Users/idabjorn/Documents/repositories/ClassLibrary/obj/Debug/net7.0/refint/AuctionServiceClassLibrary.dll
+/Users/idabjorn/Documents/repositories/ClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.pdb
+/Users/idabjorn/Documents/repositories/ClassLibrary/obj/Debug/net7.0/ref/AuctionServiceClassLibrary.dll
