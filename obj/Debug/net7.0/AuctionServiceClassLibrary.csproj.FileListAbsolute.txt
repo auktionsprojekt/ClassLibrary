@@ -1,0 +1,11 @@
+/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/bin/Debug/net7.0/AuctionServiceClassLibrary.deps.json
+/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/bin/Debug/net7.0/AuctionServiceClassLibrary.dll
+/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/bin/Debug/net7.0/AuctionServiceClassLibrary.pdb
+/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.AssemblyInfoInputs.cache
+/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.AssemblyInfo.cs
+/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.csproj.CoreCompileInputs.cache
+/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.dll
+/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/obj/Debug/net7.0/refint/AuctionServiceClassLibrary.dll
+/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/obj/Debug/net7.0/AuctionServiceClassLibrary.pdb
+/Users/helenakaad/Documents/AuctionProject/AuctionServiceClassLibrary/obj/Debug/net7.0/ref/AuctionServiceClassLibrary.dll
