@@ -9,11 +9,11 @@ public class Person
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
-    public int Id { get; set; }
+    public string Id { get; set; }
     public string Name { get; set; }
     public string Role { get; set; }
 
-    public Person(int id, string name, string role)
+    public Person(string id, string name, string role)
     {
         Id = id;
         Name = name;
@@ -25,7 +25,7 @@ public class Seller : Person
 {
     public string CVR {get; set;}
 
-    public Seller(int id, string name, string cvr) : base(id, name, "Seller")
+    public Seller(string id, string name, string cvr) : base(id, name, "Seller")
     {
         CVR = cvr;
     }
@@ -33,7 +33,7 @@ public class Seller : Person
 
 public class User : Person
 {
-    public User(int id, string name) : base(id, name, "User")
+    public User(string id, string name) : base(id, name, "User")
     {
 
     }
@@ -41,7 +41,7 @@ public class User : Person
 
 public class Admin : Person
 {
-    public Admin(int id, string name) : base(id, name, "Admin")
+    public Admin(string id, string name) : base(id, name, "Admin")
     {
         
     }
