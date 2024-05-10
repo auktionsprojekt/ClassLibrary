@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
@@ -6,40 +7,42 @@ namespace AuctionServiceClassLibrary;
 
 public class Person
 {
-    public string? GivenName { get; set; }
+    [BsonId]
+    [BsonRepresentation(BsonType.ObjectId)]
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Role { get; set; }
 
-    public string? Address { get; set; }
-
-    public DateTime BirthDate { get; set; }
-
-    public int Telephone { get; set; }
-
-    public string? Email { get; set; }
-
-    public string? Password { get; set; }
-
-
-    public class Seller : Person
+    public Person(int id, string name, string role)
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string? Id { get; set; }
-
-        public string? CVR { get; set; }
-    }
-
-    public class Admin : Person
-    {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string? Id { get; set; }
-    }
-
-    public class User : Person
-    {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string? Id { get; set; }
+        Id = id;
+        Name = name;
+        Role = role;
     }
 }
 
+public class Seller : Person
+{
+    public string CVR {get; set;}
+
+    public Seller(int id, string name, string cvr) : base(id, name, "Seller")
+    {
+        CVR = cvr;
+    }
+}
+
+public class User : Person
+{
+    public User(int id, string name) : base(id, name, "User")
+    {
+
+    }
+}
+
+public class Admin : Person
+{
+    public Admin(int id, string name) : base(id, name, "Admin")
+    {
+        
+    }
+}
