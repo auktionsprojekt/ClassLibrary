@@ -5,7 +5,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace AuctionServiceClassLibrary;
 
-public class Person
+public class User
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
@@ -13,7 +13,7 @@ public class Person
     public string Name { get; set; }
     public string Role { get; set; }
 
-    public Person(string id, string name, string role)
+    public User(string id, string name, string role)
     {
         Id = id;
         Name = name;
@@ -21,7 +21,7 @@ public class Person
     }
 }
 
-public class Seller : Person
+public class Seller : User
 {
     public string CVR {get; set;}
 
@@ -31,15 +31,15 @@ public class Seller : Person
     }
 }
 
-public class User : Person
+public class Bidder : User
 {
-    public User(string id, string name) : base(id, name, "User")
+    public Bidder(string id, string name) : base(id, name, "Bidder")
     {
 
     }
 }
 
-public class Admin : Person
+public class Admin : User
 {
     public Admin(string id, string name) : base(id, name, "Admin")
     {
