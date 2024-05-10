@@ -14,13 +14,13 @@ public class Product
 
     public int ValuationPrice { get; set; }
 
-    public Person? User { get; set; }
+    public User? User { get; set; }
 
     public int SalePrice { get; set; }
 
     public string? Description { get; set; }
 
-    public Person? Seller { get; set; }
+    public User? Seller { get; set; }
 
     public DateTime SaleDate { get; set; }
 

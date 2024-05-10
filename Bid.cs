@@ -14,7 +14,7 @@ public class Bid
 
     public DateTime DateSent { get; set; }
 
-    public Person? User { get; set; }
+    public User? User { get; set; }
 
     public int Amount { get; set; }
 }
