@@ -9,7 +9,7 @@ public class User
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
-    public string Id { get; set; }
+    public string? Id { get; set; }
     public string GivenName { get; set; }
 
     public string Address { get; set; }
