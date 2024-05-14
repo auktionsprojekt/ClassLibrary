@@ -2,6 +2,7 @@
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson.Serialization.IdGenerators;
 using MongoDB.Driver;
+using System.Text.Json.Serialization;
 
 namespace AuctionServiceClassLibrary;
 
@@ -29,6 +30,7 @@ public class Auction
 
     public DateTime DateCreated { get; set; }
 
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public AuctionStatus Status { get; set; }
 
     public int StartPrice { get; set; }

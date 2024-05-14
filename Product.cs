@@ -1,6 +1,7 @@
 ﻿using System;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using System.Text.Json.Serialization;
 
 namespace AuctionServiceClassLibrary;
 
@@ -36,6 +37,7 @@ public class Product
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
 
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public ProductCategory Category { get; set; }
 
     public int ValuationPrice { get; set; }
@@ -52,6 +54,7 @@ public class Product
 
     public bool Evaluation { get; set; }
 
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public ProductStatus Status { get; set; }
 
     public DateTime StartDate { get; set; }
