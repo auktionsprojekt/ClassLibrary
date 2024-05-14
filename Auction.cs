@@ -5,8 +5,17 @@ using MongoDB.Driver;
 
 namespace AuctionServiceClassLibrary;
 
+public enum AuctionStatus
+{
+    Ongoing,
+    ToBeStarted,
+    Annulled,
+    Finished
+}
+
 public class Auction
 {
+    
 
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
@@ -16,7 +25,7 @@ public class Auction
 
     public DateTime DateCreated { get; set; }
 
-    public List<string>? Status { get; set; }
+    public AuctionStatus Status { get; set; }
 
     public int StartPrice { get; set; }
 

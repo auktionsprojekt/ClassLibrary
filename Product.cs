@@ -4,13 +4,30 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace AuctionServiceClassLibrary;
 
+public enum ProductCategory
+{
+    Furniture,
+    Jewelry,
+    Art,
+    Collectibles
+}
+
+public enum ProductStatus
+{
+    Registered,
+    PendingAuction,
+    InAuction,
+    Sold,
+    Denied
+}
+
 public class Product
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
 
-    public List<string>? Category { get; set; }
+    public ProductCategory Category { get; set; }
 
     public int ValuationPrice { get; set; }
 
@@ -24,9 +41,9 @@ public class Product
 
     public DateTime SaleDate { get; set; }
 
-    public bool Approved { get; set; }
+    public bool Evaluation { get; set; }
 
-    public List<string>? Status { get; set; }
+    public ProductStatus Status { get; set; }
 
     public DateTime StartDate { get; set; }
 
