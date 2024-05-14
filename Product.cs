@@ -6,18 +6,27 @@ namespace AuctionServiceClassLibrary;
 
 public enum ProductCategory
 {
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     Furniture,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     Jewelry,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     Art,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     Collectibles
 }
 
 public enum ProductStatus
 {
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     Registered,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     PendingAuction,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     InAuction,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     Sold,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     Denied
 }
 

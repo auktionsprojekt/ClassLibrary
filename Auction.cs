@@ -7,9 +7,13 @@ namespace AuctionServiceClassLibrary;
 
 public enum AuctionStatus
 {
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     Ongoing,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     ToBeStarted,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     Annulled,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     Finished
 }
 
