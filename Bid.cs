@@ -10,11 +10,11 @@ public class Bid
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
 
-    public Auction? Auction { get; set; }
+    public long AuctionId { get; set; }
 
     public DateTime DateSent { get; set; }
 
-    public User? User { get; set; }
+    public long UserId { get; set; }
 
     public int Amount { get; set; }
 }
