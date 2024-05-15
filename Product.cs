@@ -42,13 +42,13 @@ public class Product
 
     public int ValuationPrice { get; set; }
 
-    public long UserId { get; set; }
+    public string? UserId { get; set; }
 
     public int SalePrice { get; set; }
 
     public string? Description { get; set; }
 
-    public long SellerId { get; set; }
+    public string? SellerId { get; set; }
 
     public DateTime SaleDate { get; set; }
 
