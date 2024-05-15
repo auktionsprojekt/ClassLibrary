@@ -13,9 +13,7 @@ public class Bid
     public string? AuctionId { get; set; }
 
     public DateTime DateSent { get; set; }
-
-
-    [BsonId]
+    
     [BsonRepresentation(BsonType.ObjectId)]
     public string? UserId { get; set; }
 

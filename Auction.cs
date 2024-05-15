@@ -28,7 +28,7 @@ public class Auction
 
     public Product? Product { get; set; }
 
-    public DateTime DateCreated { get; set; }
+    public DateTime DateCreated { get; set; } = DateTime.Now;
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public AuctionStatus Status { get; set; }

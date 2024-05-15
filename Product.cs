@@ -42,7 +42,6 @@ public class Product
 
     public int ValuationPrice { get; set; }
     
-    [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? UserId { get; set; }
 
@@ -50,7 +49,6 @@ public class Product
 
     public string? Description { get; set; }
     
-    [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? SellerId { get; set; }
 
