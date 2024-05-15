@@ -9,7 +9,8 @@ public class Bid
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
-
+    
+    [BsonRepresentation(BsonType.ObjectId)]
     public string? AuctionId { get; set; }
 
     public DateTime DateSent { get; set; }
