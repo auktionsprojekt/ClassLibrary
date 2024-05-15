@@ -41,13 +41,15 @@ public class Product
     public ProductCategory Category { get; set; }
 
     public int ValuationPrice { get; set; }
-
+    
+    [BsonRepresentation(BsonType.ObjectId)]
     public string? UserId { get; set; }
 
     public int SalePrice { get; set; }
 
     public string? Description { get; set; }
-
+    
+    [BsonRepresentation(BsonType.ObjectId)]
     public string? SellerId { get; set; }
 
     public DateTime SaleDate { get; set; }
