@@ -14,6 +14,9 @@ public class Bid
 
     public DateTime DateSent { get; set; }
 
+
+    [BsonId]
+    [BsonRepresentation(BsonType.ObjectId)]
     public string? UserId { get; set; }
 
     public int Amount { get; set; }
