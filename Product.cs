@@ -43,7 +43,7 @@ public class Product
     public int ValuationPrice { get; set; }
     
     [BsonRepresentation(BsonType.ObjectId)]
-    public string? UserId { get; set; }
+    public string? BidderId { get; set; }
 
     public int SalePrice { get; set; }
 
