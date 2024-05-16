@@ -52,15 +52,13 @@ public class Product
     [BsonRepresentation(BsonType.ObjectId)]
     public string? SellerId { get; set; }
 
-    public DateTime SaleDate { get; set; }
-
     public bool Evaluation { get; set; }
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public ProductStatus Status { get; set; }
 
-    public DateTime StartDate { get; set; }
+    public DateTime SaleDate { get; set; }
 
-    public DateTime EndDate { get; set; }
+    public DateTime AuctionStartDate { get; set; }
 }
 

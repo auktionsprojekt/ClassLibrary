@@ -20,20 +20,15 @@ public enum AuctionStatus
 
 public class Auction
 {
-    
-
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
-
     public Product? Product { get; set; }
-
-    public DateTime DateCreated { get; set; } = DateTime.Now;
+    public DateTime StartDate { get; set; } = DateTime.Now;
+    public DateTime EndDate { get; set; }
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public AuctionStatus Status { get; set; }
-
     public int StartPrice { get; set; }
-
 }
 

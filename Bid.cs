@@ -13,7 +13,7 @@ public class Bid
     [BsonRepresentation(BsonType.ObjectId)]
     public string? AuctionId { get; set; }
 
-    public DateTime DateSent { get; set; }
+    public DateTime DateSent { get; set; } = DateTime.Now;
     
     [BsonRepresentation(BsonType.ObjectId)]
     public string? BidderId { get; set; }
