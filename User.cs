@@ -23,7 +23,9 @@ public class User
     public string Password { get; set; }
     public string Role { get; set; }
 
-    public User(string id, string name, string address, DateTime birthdate, int telephone, string email, string password, string role)
+    public DateTime RegistrationDate { get; set; }
+
+    public User(string id, string name, string address, DateTime birthdate, int telephone, string email, string password, string role, DateTime registrationDate)
     {
         Id = id;
         GivenName = name;
@@ -33,6 +35,7 @@ public class User
         Email = email;
         Password = password;
         Role = role;
+        RegistrationDate = registrationDate;
     }
 
         public User()
@@ -45,7 +48,7 @@ public class Seller : User
 {
     public string CVR {get; set;}
 
-    public Seller(string id, string name, string address, DateTime birthdate, int telephone, string email, string password, string role, string cvr) : base(id, name, address, birthdate, telephone, email, password, "Seller")
+    public Seller(string id, string name, string address, DateTime birthdate, int telephone, string email, string password, string role, string cvr, DateTime registrationDate) : base(id, name, address, birthdate, telephone, email, password, "Seller", registrationDate)
     {
         CVR = cvr;
     }
@@ -53,7 +56,7 @@ public class Seller : User
 
 public class Bidder : User
 {
-    public Bidder(string id, string name, string address, DateTime birthdate, int telephone, string email, string password, string role) : base(id, name, address, birthdate, telephone, email, password, "Bidder")
+    public Bidder(string id, string name, string address, DateTime birthdate, int telephone, string email, string password, string role, DateTime registrationDate) : base(id, name, address, birthdate, telephone, email, password,  "Bidder", registrationDate)
     {
 
     }
@@ -61,7 +64,7 @@ public class Bidder : User
 
 public class Admin : User
 {
-    public Admin(string id, string name, string address, DateTime birthdate, int telephone, string email, string password, string role) : base(id, name, address, birthdate, telephone, email, password, "Admin")
+    public Admin(string id, string name, string address, DateTime birthdate, int telephone, string email, string password, string role, DateTime registrationDate) : base(id, name, address, birthdate, telephone, email, password, "Admin", registrationDate)
     {
         
     }

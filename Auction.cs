@@ -30,5 +30,11 @@ public class Auction
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public AuctionStatus Status { get; set; }
     public int StartPrice { get; set; }
+
+
+    // When you create a auction, needs to have the admin user who created it
+    // openapi requirements
+    public User createdBy { get; set; }
+
 }
 
