@@ -9,6 +9,9 @@ public class AuctionBidDTO
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
 
+ [BsonRepresentation(BsonType.ObjectId)]
+    public string? AuctionId { get; set; }
+
     public DateTime AuctionEndDate { get; set; }
 
     [BsonRepresentation(BsonType.ObjectId)]
