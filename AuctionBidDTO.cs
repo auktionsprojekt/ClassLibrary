@@ -24,7 +24,7 @@ public class AuctionBidDTO
     public string? Id { get; set; }
 
  [BsonRepresentation(BsonType.ObjectId)]
-    public string? AuctionId { get; set; }
+    public string? ProductId { get; set; }
 
     public DateTime AuctionEndDate { get; set; }
 
