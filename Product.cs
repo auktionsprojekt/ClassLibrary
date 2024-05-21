@@ -28,6 +28,8 @@ public enum ProductStatus
     [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     Sold,
     [BsonRepresentation(MongoDB.Bson.BsonType.String)]
+    NotSold,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
     Denied
 }
 
@@ -43,9 +45,9 @@ public class Product
     public int ValuationPrice { get; set; }
     
     [BsonRepresentation(BsonType.ObjectId)]
-    public string? BidderId { get; set; }
+    public string? BidderId { get; set; } //
 
-    public int SalePrice { get; set; }
+    public int SalePrice { get; set; } //
 
     public string? Description { get; set; }
     
@@ -55,9 +57,9 @@ public class Product
     public bool Evaluation { get; set; }
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
-    public ProductStatus Status { get; set; }
+    public ProductStatus Status { get; set; } //
 
-    public DateTime SaleDate { get; set; }
+    public DateTime SaleDate { get; set; } //
 
     public DateTime AuctionStartDate { get; set; }
 }
