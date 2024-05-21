@@ -1,8 +1,22 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson.Serialization.Serializers;
+using System.Text.Json.Serialization;
 
 namespace AuctionServiceClassLibrary;
 
+
+public enum AuctionBidStatus
+{
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
+    Ongoing,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
+    ToBeStarted,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
+    Annulled,
+    [BsonRepresentation(MongoDB.Bson.BsonType.String)]
+    Finished
+}
 public class AuctionBidDTO
 {
     [BsonId]
@@ -16,6 +30,9 @@ public class AuctionBidDTO
 
     [BsonRepresentation(BsonType.ObjectId)]
     public string? BidderId { get; set; }
+
+    [JsonConverter(typeof(JsonStringEnumConverter))]
+    public AuctionStatus Status { get; set; }
 
     public int Amount { get; set; }
 }
