@@ -22,6 +22,7 @@ public class User
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
+
     public string? GivenName { get; set; }
 
     public string? Address { get; set; }
@@ -37,5 +38,19 @@ public class User
     public Role Role { get; set; }
 
     public DateTime RegistrationDate { get; set; }
-}
 
+
+    public User(string id, string name, string address, DateTime birthdate, int telephone, string email,
+        string password, Role role, DateTime registrationDate)
+    {
+        Id = id;
+        GivenName = name;
+        Address = address;
+        BirthDate = birthdate;
+        Telephone = telephone;
+        Email = email;
+        Password = password;
+        Role = role;
+        RegistrationDate = registrationDate;
+    }
+}
