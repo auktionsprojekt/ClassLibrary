@@ -2,6 +2,7 @@
 using System.Security.Cryptography.X509Certificates;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using System.Text.Json.Serialization;
 
 namespace AuctionServiceClassLibrary;
 
@@ -34,23 +35,11 @@ public class User
     public string Email { get; set; }
 
     public string Password { get; set; }
-
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public Role Role { get; set; }
 
     public DateTime RegistrationDate { get; set; }
 
 
-    public User(string id, string name, string address, DateTime birthdate, int telephone, string email,
-        string password, Role role, DateTime registrationDate)
-    {
-        Id = id;
-        GivenName = name;
-        Address = address;
-        BirthDate = birthdate;
-        Telephone = telephone;
-        Email = email;
-        Password = password;
-        Role = role;
-        RegistrationDate = registrationDate;
-    }
+   
 }
