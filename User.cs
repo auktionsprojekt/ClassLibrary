@@ -28,9 +28,9 @@ public class User
 
     public string? Address { get; set; }
 
-    public DateTime BirthDate { get; set; }
+    public DateTime? BirthDate { get; set; }
 
-    public int Telephone { get; set; }
+    public int? Telephone { get; set; }
 
     public string Email { get; set; }
 
@@ -38,7 +38,7 @@ public class User
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public Role Role { get; set; }
 
-    public DateTime RegistrationDate { get; set; }
+    public DateTime RegistrationDate { get; set; } = DateTime.Now;
 
 
    
