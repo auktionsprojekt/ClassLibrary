@@ -34,7 +34,9 @@ public class Auction
 
     // When you create a auction, needs to have the admin user who created it
     // openapi requirements
-    public User createdBy { get; set; }
+    // public User createdBy { get; set; }
+
+    public string? CreatedById { get; set; }
 
 }
 

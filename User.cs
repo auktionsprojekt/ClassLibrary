@@ -40,6 +40,7 @@ public class User
 
     public DateTime RegistrationDate { get; set; } = DateTime.Now;
 
+    public User(){}
 
    
 }
