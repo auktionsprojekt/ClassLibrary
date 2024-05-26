@@ -36,6 +36,8 @@ public class Auction
     // public User createdBy { get; set; }
     [BsonRepresentation(BsonType.ObjectId)]
     public string? CreatedById { get; set; } //Admin 
+    public string CreatedByName { get; set; } //Admin
+    public DateTime RegistrationsDate { get; set; } = DateTime.Now;
 
 }
 
